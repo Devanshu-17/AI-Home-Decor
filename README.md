@@ -1,8 +1,8 @@
-# djcsi_AVALANCHE
+# Developed For Codeshastra Hackathon 9.0
 
-hackathon project on AI/ML domain (Home Decor)
+Hackathon project on AI/ML domain (Home Decor Visualisation)
 
-### demo video
+### Demo video
 
 [streamlit-Homepage-2023-04-09-09-04-04.webm](https://user-images.githubusercontent.com/93381397/230753212-3f076252-e771-498d-895b-89ba2403e3f3.webm)
 

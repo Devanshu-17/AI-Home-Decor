@@ -1,10 +1,11 @@
 # Developed For Codeshastra Hackathon 9.0
 
-Hackathon project on AI/ML domain (Home Decor Visualisation)
+Welcome to the AI House Decor System, a revolutionary new way to decorate your home! Our system uses advanced artificial intelligence algorithms to suggest decor ideas that suit your taste and style. With just a few clicks, you can transform your home into a stylish and comfortable space that reflects your personality.
 
 ### Demo video
 
 [streamlit-Homepage-2023-04-09-09-04-04.webm](https://user-images.githubusercontent.com/93381397/230753212-3f076252-e771-498d-895b-89ba2403e3f3.webm)
+
 
 ## Our Approach Images:
  

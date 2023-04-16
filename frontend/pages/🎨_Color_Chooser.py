@@ -9,7 +9,7 @@ from detectron2.data import MetadataCatalog
 from detectron2 import model_zoo
 from detectron2.utils.logger import setup_logger
 from Homepage import get_session_state, set_session_state
-import openai
+# import openai
 
 setup_logger()
 
@@ -32,19 +32,19 @@ def set_session_state(state):
 def is_user_logged_in():
     return get_session_state().get("is_logged_in", False)
 
-def generate_openai_answer(prompt, api_key = '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'):
-    openai.api_key = api_key
-    model = 'gpt-3.5-turbo'  # You can change the model engine as needed
+# def generate_openai_answer(prompt, api_key = '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'):
+#     openai.api_key = api_key
+#     model = 'gpt-3.5-turbo'  # You can change the model engine as needed
 
-    response = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    messages=[
-            {"role": "user", "content": prompt}
-        ]
-    )
+#     response = openai.ChatCompletion.create(
+#     model="gpt-3.5-turbo",
+#     messages=[
+#             {"role": "user", "content": prompt}
+#         ]
+#     )
 
-    message = response['choices'][0]['message']['content'].strip()
-    return message
+#     message = response['choices'][0]['message']['content'].strip()
+#     return message
 
 if not is_user_logged_in():
     st.error("You need to log in to access this page.")
@@ -210,9 +210,9 @@ if uploaded_file is not None:
             col1.image(out.get_image()[:, :, ::-1], caption='Output Image.', use_column_width=True)
             col2.image(only_segmented_image_op.get_image()[:, :, ::-1], caption='segmented image', use_column_width=True)
         
-        suggestion_to_user = generate_openai_answer(prompt)
-        st.markdown('### 💡Suggestion to user')
-        st.warning(suggestion_to_user)
+        # suggestion_to_user = generate_openai_answer(prompt)
+        # st.markdown('### 💡Suggestion to user')
+        # st.warning(suggestion_to_user)
             
 
         if st.button('Download Image'):
